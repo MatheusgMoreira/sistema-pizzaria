@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Pizzaria</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>Pizzaria Belô</h1>
+            <h2>Sistema de vendas</h2>
+        </header>
+    
+        <section class="selecao">
+            <form action="">
+                <h3>Selecione o tipo de Pizza</h3>
+                <ul>
+                    <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela">Mussarela</label></li>
+                    <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">Calabresa</label></li>
+                    <li><input type="radio" id="frango" name="pizzas"><label for="frango">Frango</label></li>
+                </ul>
+            </form>
+        </section>
+
+        <section class="btns">
+            <button id="vendas">Venda</button>
+            <button id="estorno">Estorno</button>
+        </section>
+    
+        <section id="table">
+            <h3>Tabela de vendas</h3>
+            <table>
+                <tr>
+                    <th>Sabores</th>
+                    <th>Quantidade</th>
+                    <th>Valores</th>
+                </tr>
+                <tr>
+                    <td>Mussarela</td>
+                    <td id="qtdMussarela">0</td>
+                    <td id="vlrMussarela">R$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>Calabresa</td>
+                    <td id="qtdCalabresa">0</td>
+                    <td id="vlrCalabresa">R$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>Frango</td>
+                    <td id="qtdFrango">0</td>
+                    <td id="vlrFrango">R$ 0.00</td>
+                </tr>
+                <tr class="total">
+                    <td>Total</td>
+                    <td id="qtdTotal">0</td>
+                    <td id="vlrTotal">R$ 0.00</td>
+                </tr>
+            </table>
+
+            <button id="export">Planilha</button>
+        </section>
+    </div>
+
+    <script src="js/tableToExcel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
